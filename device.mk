@@ -16,20 +16,8 @@
 
 BOARD_TOUCHSCREEN_DRIVER := synaptics_dsx
 
-DEVICE_PACKAGE_OVERLAYS := \
-    device/asus/T00F/overlay
-
-# Art
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dex2oat-swap=false
-
-# Asus properties
-ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.build.asus.sku=WW
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.redhookbay \
     init.recovery.redhookbay.rc \
-    intel_prop.cfg \
     ueventd.redhookbay.rc
